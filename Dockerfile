@@ -2,7 +2,6 @@ FROM openjdk:8-jdk as builder
 WORKDIR /app
 COPY ./src/*.java ./
 RUN javac *.java
-RUN ls -l
 
 FROM openjdk:8-jre
 WORKDIR /app
